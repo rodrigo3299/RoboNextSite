@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextBot - Robocup 2025</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS adicional -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">NextBot</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#apresentacao">Apresentação</a></li>
+          <li class="nav-item"><a class="nav-link" href="#imagens">Imagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#armas">Sistema de Armas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hardware">Hardware</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Vídeos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#grupo">Grupo</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Apresentação -->
+  <section id="apresentacao" class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="mb-3">NextBot</h1>
+      <p class="lead">O NextBot é o robô desenvolvido pela nossa equipe para competir na Robocup 2025. Com foco em agilidade, precisão e inteligência, ele combina tecnologia de ponta com dedicação total, adaptando-se aos desafios da competição.</p>
+    </div>
+  </section>
+
+  <!-- Seção Imagens -->
+  <section id="imagens" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Galeria do Robô</h2>
+      <div class="row g-3">
+        <div class="col-md-4"><img src="images/robo1.jpg" class="img-fluid rounded" alt="NextBot - vista frontal"></div>
+        <div class="col-md-4"><img src="images/robo2.jpg" class="img-fluid rounded" alt="NextBot - vista lateral"></div>
+        <div class="col-md-4"><img src="images/robo3.jpg" class="img-fluid rounded" alt="NextBot - montagem"></div>
+        <div class="col-md-4"><img src="images/robo4.jpg" class="img-fluid rounded" alt="NextBot - sensores"></div>
+        <div class="col-md-4"><img src="images/robo5.jpg" class="img-fluid rounded" alt="NextBot - teste de campo"></div>
+        <div class="col-md-4"><img src="images/robo6.jpg" class="img-fluid rounded" alt="NextBot - detalhe da estrutura"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sistema de Armas -->
+  <section id="armas" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Sistema de Armas</h2>
+      <p class="text-center">O NextBot possui sistema de atuação controlado eletronicamente, garantindo precisão e segurança. Cada disparo é monitorado por sensores, ajustando força e direção para máxima eficiência durante a competição.</p>
+    </div>
+  </section>
+
+  <!-- Seção Hardware -->
+  <section id="hardware" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Hardware Necessário</h2>
+      <ul class="list-group list-group-flush w-50 mx-auto">
+        <li class="list-group-item">Microcontrolador ESP32</li>
+        <li class="list-group-item">Sensores de proximidade ultrassônicos</li>
+        <li class="list-group-item">Câmera de visão computacional</li>
+        <li class="list-group-item">Estrutura em alumínio leve e resistente</li>
+        <li class="list-group-item">Bateria de lítio 12V</li>
+        <li class="list-group-item">Motor DC de alto torque</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Seção Vídeos -->
+  <section id="videos" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Vídeos</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6">
+          <h5>Construção do Robô</h5>
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="videos/construcao.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h5>Robô em Movimento</h5>
+          <div class="ratio ratio-16x9">
+            <video controls>
+              <source src="videos/movimento.mp4" type="video/mp4">
+              Seu navegador não suporta vídeo.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Grupo -->
+  <section id="grupo" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nosso Grupo</h2>
+      <p class="text-center">Somos uma equipe apaixonada por robótica, formada por estudantes da FIAP, que acredita no poder da inovação.</p>
+      <ul class="list-group w-50 mx-auto">
+        <li class="list-group-item">Rodrigo Farias Lima</li>
+        <li class="list-group-item">Eric Hapieng</li>
+        <li class="list-group-item">Outros integrantes...</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>Robocup 2025 - Trem Bala</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" width="30"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" width="30"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter" width="30"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

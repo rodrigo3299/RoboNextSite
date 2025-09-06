@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth; /* Scroll suave ao clicar nos links */
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
