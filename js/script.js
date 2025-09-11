@@ -1,4 +1,4 @@
-// Destacar link ativo no menu ao rolar a página
+
 document.addEventListener("scroll", () => {
   const sections = document.querySelectorAll("section");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -6,7 +6,7 @@ document.addEventListener("scroll", () => {
   let current = "";
 
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 80; // Ajuste para navbar
+    const sectionTop = section.offsetTop - 80; 
     if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
     }
@@ -20,7 +20,7 @@ document.addEventListener("scroll", () => {
   });
 });
 
-// Fechar menu colapsável ao clicar em link (mobile)
+
 const navLinksCollapse = document.querySelectorAll(".navbar-collapse .nav-link");
 const navbarCollapse = document.querySelector(".navbar-collapse");
 
@@ -31,25 +31,62 @@ navLinksCollapse.forEach(link => {
   });
 });
 
-// Mensagem de confirmação no Fale Conosco
+
 const form = document.querySelector("#comunicacao form");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault(); // evita que a página recarregue
+  e.preventDefault(); 
 
-  // Limpa o formulário
+  
   form.reset();
 
-  // Cria a mensagem de confirmação
+
   const confirmMsg = document.createElement("div");
   confirmMsg.className = "alert alert-success mt-3";
   confirmMsg.textContent = "Mensagem enviada com sucesso!";
 
-  // Adiciona a mensagem abaixo do formulário
+  
   form.appendChild(confirmMsg);
 
-  // Remove a mensagem depois de 3 segundos
+  
   setTimeout(() => {
     confirmMsg.remove();
   }, 3000);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ctx1 = document.getElementById('clientesChart');
+  if (ctx1) {
+    new Chart(ctx1, {
+      type: 'line',
+      data: {
+        labels: ['2025', '2026', '2027', '2028', '2029'],
+        datasets: [{
+          label: 'Clientes (estimado)',
+          data: [100, 300, 800, 1500, 2500],
+          borderColor: 'blue',
+          borderWidth: 2,
+          fill: false
+        }]
+      },
+      options: { responsive: true }
+    });
+  }
+
+  
+  const ctx2 = document.getElementById('investimentoChart');
+  if (ctx2) {
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['Rodada A', 'Rodada B', 'Rodada C'],
+        datasets: [{
+          label: 'Investimento (em R$ mil)',
+          data: [200, 500, 1200],
+          backgroundColor: ['#007bff', '#28a745', '#ffc107']
+        }]
+      },
+      options: { responsive: true }
+    });
+  }
 });
