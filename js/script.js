@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
         labels: ['2025', '2026', '2027', '2028', '2029'],
         datasets: [{
           label: 'Clientes (estimado)',
-          data: [100, 300, 800, 1500, 2500],
+          data: [50, 100, 200, 500, 1000],
           borderColor: 'blue',
           borderWidth: 2,
           fill: false
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         labels: ['Rodada A', 'Rodada B', 'Rodada C'],
         datasets: [{
           label: 'Investimento (em R$ mil)',
-          data: [200, 500, 1200],
+          data: [20, 30, 50],
           backgroundColor: ['#007bff', '#28a745', '#ffc107']
         }]
       },
