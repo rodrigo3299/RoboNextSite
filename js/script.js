@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         labels: ['Rodada A', 'Rodada B', 'Rodada C'],
         datasets: [{
           label: 'Investimento (em R$ mil)',
-          data: [20, 30, 50],
+          data: [5, 10, 15],
           backgroundColor: ['#007bff', '#28a745', '#ffc107']
         }]
       },
